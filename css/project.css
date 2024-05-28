@@ -7,7 +7,7 @@
 .not-dark {
 	--cnvs-themecolor: #0037ff;
 	--cnvs-themecolor-rgb: 0, 55, 255;
-	--cnvs-primary-font: abril-display, serif;
+	--cnvs-primary-font: 'Inter', sans-serif;
 	--cnvs-body-font: tenon, sans-serif;
 
 	--cnvs-border-radius: 6px;
