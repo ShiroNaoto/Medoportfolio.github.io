@@ -20,6 +20,7 @@
 
 	<!-- Niche Demos -->
 	<link rel="stylesheet" href="css/project.css">
+	<link rel="stylesheet" href="css/portfolio.css">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
@@ -28,39 +29,7 @@
 	<!-- Document Title
 	============================================= -->
 	<title>ShiroNaoto - Portfolio Page</title>
-	<style>
-		.image-overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-			/* Semi-transparent black background */
-			opacity: 0;
-			/* Initially hidden */
-			transition: opacity 0.3s ease-in-out;
-			/* Smooth transition */
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
 
-		/* Style for the overlay text */
-		.overlay-text {
-			color: white;
-			/* Text color */
-			font-size: 1.5rem;
-			/* Adjust as needed */
-			font-weight: bold;
-			/* Adjust as needed */
-		}
-
-		/* Show the overlay on hover */
-		.grid-item:hover .image-overlay {
-			opacity: 1;
-		}
-	</style>
 </head>
 
 <body class="stretched dark">
@@ -80,18 +49,9 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html">
-								<img class="logo-default" srcset="images/logo.png, images/logo@2x.png 2x"
-									src="images/logo@2x.png" alt="Canvas Logo">
-								<img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x"
-									src="images/logo-dark@2x.png" alt="Canvas Logo">
-							</a>
+							<img src="images/Naoto.png" alt="AdminLTE Logo" class="brand-image" style="opacity: 1">
+							<span class="brand-text font-weight-light"><b>Zhen Tashi</b></span>
 						</div><!-- #logo end -->
-
-						<div class="header-misc">
-
-						</div>
-
 
 						<div class="primary-menu-trigger">
 							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
@@ -106,12 +66,17 @@
 							<ul class="menu-container">
 								<li class="menu-item">
 									<a class="menu-link" href="index.html">
-										<div>Works</div>
+										<div>Home</div>
 									</a>
 								</li>
 								<li class="menu-item current">
 									<a class="menu-link" href="demo-project-single.html">
 										<div>Project</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="demo-project-single.html">
+										<div>Gallery</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -140,19 +105,19 @@
 
 				<div class="container-fluid position-relative scroll-detect"
 					style="--bs-gutter-x: 1.875rem; height: calc(100vh + 90vh);">
-					<img data-src="images/portfolio/single.jpg" alt=".."
+					<img data-src="images/header.jpeg" alt=".."
 						class="d-block lazy rounded mx-auto object-cover h-100 vh-90 position-sticky all-ts"
 						style="--cnvs-transitions: .3s linear; width: calc(30% + calc(1% * var(--cnvs-scroll-percent))); top: 120px;">
 				</div>
 
 				<div class="container mw-md mt-5 mt-lg-6 scroll-detect" data-scroll-offset="20%">
 					<h1 class="fs-1 fst-italic"><span class="nocolor text-fill-effect all-ts"
-							style="--cnvs-transitions:.75s ease;">Open Imagination</span></h1>
+							style="--cnvs-transitions:.75s ease;">Web Development</span></h1>
 					<p class="fs-3 font-primary"><span class="nocolor text-fill-effect all-ts"
-							style="--cnvs-transitions:.75s ease;">Lorem, ipsum dolor sit amet consectetur adipisicing
-							elit. Accusamus doloribus, similique earum voluptate quibusdam quo dolores assumenda iste
-							distinctio ullam, reprehenderit explicabo suscipit deserunt veritatis quas eligendi. Vero,
-							deleniti eos!</span></p>
+							style="--cnvs-transitions:.75s ease;">Welcome to my web development portfolio! Explore three
+							ticket service projects showcasing my versatility and expertise. Dive in to discover
+							seamless user experiences and robust backend functionalities. Let's embark on this journey
+							together!</span></p>
 				</div>
 				<div class="container mt-5 mt-lg-6">
 					<h1 class="fs-1 fst-italic"><span class="nocolor text-fill-effect all-ts"
@@ -161,21 +126,33 @@
 					<div class="masonry-thumbs grid-container row row-cols-3" data-lightbox="gallery"
 						style="--bs-gutter-x: 1.25rem; --bs-gutter-y: 1.25rem;">
 						<a class="grid-item" href="https://github.com/ShiroNaoto/Laravel-Livewire"><img
-								class="rounded-6" src="images/portfolio/2/Livewire.png" alt="Gallery Thumb 1">
-							<div class="image-overlay">
-								<span class="overlay-text">Livewire</span>
+								class="rounded-6" src="images/portfolio/web/Livewire.png" alt="Gallery Thumb 1">
+							<div class="bg-overlay">
+								<div class="bg-overlay-content dark text-overlay-mask flex-column dark justify-content-end"
+									data-hover-animate="fadeIn" data-hover-speed="350">
+									<h5 class="mb-0">Laravel Livewire</h5>
+									<small>Dynamic Ticket Service</small>
+								</div>
 							</div>
 						</a>
 						<a class="grid-item" href="https://github.com/ShiroNaoto/Laravel-CRUD"><img class="rounded-6"
-								src="images/portfolio/2/Laravel.png" alt="Gallery Thumb 2">
-							<div class="image-overlay">
-								<span class="overlay-text">Laravel</span>
+								src="images/portfolio/web/Laravel.png" alt="Gallery Thumb 2">
+							<div class="bg-overlay">
+								<div class="bg-overlay-content dark text-overlay-mask flex-column dark justify-content-end"
+									data-hover-animate="fadeIn" data-hover-speed="350">
+									<h5 class="mb-0">Laravel PHP</h5>
+									<small>Vanilla Laravel Ticket Service</small>
+								</div>
 							</div>
 						</a>
 						<a class="grid-item" href="https://github.com/ShiroNaoto/Frontend-Vue.js"><img class="rounded-6"
-								src="images/portfolio/2/VueLaravelAPI.png" alt="Gallery Thumb 3">
-							<div class="image-overlay">
-								<span class="overlay-text">Laravel API + Vue.js</span>
+								src="images/portfolio/web/VueLaravelAPI.png" alt="Gallery Thumb 3">
+							<div class="bg-overlay">
+								<div class="bg-overlay-content dark text-overlay-mask flex-column dark justify-content-end"
+									data-hover-animate="fadeIn" data-hover-speed="350">
+									<h5 class="mb-0">Laravel API + Vue.js</h5>
+									<small>Dynamic Ticket Service</small>
+								</div>
 							</div>
 						</a>
 					</div>
@@ -234,16 +211,16 @@
 						</div>
 					</div>
 
-					<p class="fs-4 font-primary mt-5 mt-lg-6">Efficiently fashion maintainable leadership via enterprise
-						users. Globally myocardinate sticky technologies for focused intellectual capital.
-						Authoritatively reintermediate extensible processes whereas enabled core competencies.
-						Conveniently reinvent cross-unit materials before inexpensive partnerships. Phosfluorescently
-						brand distributed relationships whereas proactive partnerships. <br><br>
+					<p class="fs-4 font-primary mt-5 mt-lg-6">These projects collectively demonstrate a wide range of
+						skills and expertise in both frontend and backend development, highlighting proficiency in
+						Laravel, Livewire, Vue.js, and full-stack development principles. Each service is built with a
+						focus on user experience, performance, and scalability, <br><br>
 
-						Completely extend front-end total.</p>
+						Showcasing a deep understanding of
+						modern web development practices.</p>
 				</div>
 
-				<div class="text-center mt-6 text-smaller"><a href="demo-project.html" class="text-contrast-600"><i
+				<div class="text-center mt-6 text-smaller"><a href="index.html" class="text-contrast-600"><i
 							class="bi-arrow-left me-2"></i><u>Back to Projects</u></a></div>
 
 			</div>
@@ -262,11 +239,11 @@
 					<div class="row">
 
 						<div class="col-12 text-center">
-							Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.
-							<div class="copyright-links op-06"><a
-									href="https://1.envato.market/c/1309643/480739/4415?u=http%3A%2F%2Fthemeforest.net%2Fuser%2Fsemicolonweb%2Fportfolio"
-									target="_blank">Home</a> / <a href="http://support.semicolonweb.com"
-									target="_blank">Contact</a></div>
+							Created by Alcaraz Joshua Aron B.
+							<div class="image">
+								<img src="images/Naoto.png" class="img-circle elevation-2" alt="User Image" width="200"
+									height="200">
+							</div>
 						</div>
 
 					</div>
