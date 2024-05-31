@@ -119,7 +119,7 @@ body.dark {
 }
 
 .portfolio .bg-overlay:not(.no-hover-blur):hover .bg-overlay-content::before {
-	--cnvs-blur-offset: 50px;
+	--cnvs-blur-offset: 10px;
 	background-color: rgba(248, 248, 250, 0.1);
 	backdrop-filter: blur(1.5rem);
 	-webkit-backdrop-filter: blur(1.5rem);
